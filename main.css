@@ -80,7 +80,7 @@ div {
     background-color: lightgray;
     display: inline-block;
     height: 100%;
-    width: 25%;
+    width: 20%;
     float: left;
 }
 
@@ -105,7 +105,7 @@ div {
     background-color: gray;
     display: inline-block;
     height: 100%;
-    width: 50%;
+    width: 60%;
     float: left;
 }
 
@@ -119,21 +119,21 @@ div {
 
 .body_container-main_middle_picture {
     margin: 0 auto;
-    width: 84%;
+    width: 80%;
     border: solid;
     border-color: white;
 }
 
 .body_container-main_middle_picture img {
     height: 500px;
-    width: 800px;
+    width: 100%;
 }
 
 .body_container-main_right {
     background-color: lightgray;
     display: inline-block;
     height: 100%;
-    width: 25%;
+    width: 20%;
     float: left;
 }
 
