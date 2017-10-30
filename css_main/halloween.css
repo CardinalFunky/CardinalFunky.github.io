@@ -1,3 +1,7 @@
 body { background: orange !important; }
+
 a { color: gray; }
 a:hover { text-decoration: none; color: white; }
+p a:hover { text-decoration: none; color: blue; }
+
+.thumbnail { text-align: center; }
