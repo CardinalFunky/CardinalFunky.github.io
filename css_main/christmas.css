@@ -1,7 +1,0 @@
-a { color: gray; }
-a:hover { text-decoration: none; color: white; }
-body { background: blue !important; }
-p a:hover { text-decoration: none; color: blue; }
-
-.thumbnail { text-align: center; }
-.text-center { text-align: center; }

@@ -4,109 +4,22 @@
         <title>Cardinal Funky</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css_main/christmas.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- <script src="js_main/snowstorm.js"></script> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css_main/main.css">
     </head>
     <body>
-        <!-- Navbar Starts Here -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Cardinal Funky | Merry Christmas!</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Achievements <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Gaming_Related.html">Gaming Related</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hobbies <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://legendaryfunky.blogspot.com/">Blog</a></li>
-                            <li><a href="http://www.completionator.com/Community/Profile/14041">Completionator</a></li>
-                            <li><a href="https://www.exophase.com/user/CardinalFunky/">ExoPhase</a></li>
-                            <li><a href="https://github.com/CardinalFunky">GitHub</a></li>
-                            <li><a href="https://www.goodreads.com/user/show/67506229-cardinalfunky">Goodreads</a></li>
-                            <li><a href="https://myanimelist.net/profile/Cardinal_Funky">MyAnimeList</a></li>
-                            <li><a href="https://trakt.tv/users/cardinal-funky">Trakt.tv</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Social Media <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://twitter.com/CardinalFunky">Twitter</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Navbar Ends Here -->
-        
-        <div class="container">
-            <!-- Personal Web Dev. Project Display Case -->
-            <div class="panel panel-default">
-                <div class="panel-heading"><center><h4>Personal Web Development Projects</h4></center></div>
-                <div class="row">
-                    <div class="col-sm-4  col-md-4">
-                        <div class="thumbnail">
-                            <img data-src="" alt="">
-                            <div class="caption">
-                                <h3>N/A</h3>
-                                <p>...</p>
-                            </div>
-                        </div>
-                        <!-- Removed due to not wanting To work on this, particular site.
-                        <div class="thumbnail">
-                            <img src="http://cdn.wccftech.com/wp-content/uploads/2016/08/Wolves-of-Midgard-Gcom-01-Logo.png" height="300px" width="300px" alt="">
-                            <div class="caption">
-                                <h3>Vikings - Wolves of Midgard</h3>
-                                <p><a href="https://github.com/CardinalFunky/vikings-wm">GitHub Repository</a></p>
-                                <p><a href="https://cardinalfunky.github.io/vikings-wm/">Website</a></p>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                    <div class="col-sm-4  col-md-4">
-                        <div class="thumbnail">
-                            <img data-src="" alt="">
-                            <div class="caption">
-                                <h3>N/A</h3>
-                                <p>...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4  col-md-4">
-                        <div class="thumbnail">
-                            <img data-src="" alt="">
-                            <div class="caption">
-                                <h3>N/A</h3>
-                                <p>...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid" id="primary-body">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="primary-navbar"></nav>
+            <div class="jumbotron" id="primary-jumbo"></div>
+            <div class="container" id="primary-content"></div>
         </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <script src="js_main/functions.js"></script>
+        <script src="js_main/main.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
