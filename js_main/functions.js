@@ -23,7 +23,8 @@ function NavBar(Object) {
         ["https://github.com/CardinalFunky", "Github"],
         ["https://www.goodreads.com/user/show/67506229-cardinalfunky", "GoodReads"],
         ["https://myanimelist.net/profile/Cardinal_Funky", "MyAnimeList"],
-        ["https://trakt.tv/users/cardinal-funky", "Trakt.tv"]
+        ["https://trakt.tv/users/cardinal-funky", "Trakt.tv"],
+        ["https://deckbox.org/users/cardinalfunky", "DeckBox.org"]
     ];
 
     for (var i = 0; i < navList.length; i++) {
