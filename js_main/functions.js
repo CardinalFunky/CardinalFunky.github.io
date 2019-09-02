@@ -1,3 +1,4 @@
+/* The header of the site. */
 function Header(object) {
     var head = 
         '<img src="./images/profile/funky.jpg" class="img-fluid rounded mx-auto d-block">' +
@@ -7,6 +8,7 @@ function Header(object) {
     $(object).append(head);
 }
 
+/* The navigation bar of the site. */
 function NavBar(Object) {
     var navbar = 
         '<div class="navbar-nav mr-auto" id="navbarNav">' +
@@ -16,7 +18,7 @@ function NavBar(Object) {
     $(Object).append(navbar);
 
     var navList = [
-        ["https://legendaryfunky.blogspot.com/", "Personal Blog"],
+        ["https://cardinaljourney.home.blog/", "Personal Blog"],
         ["http://lorekeeper.home.blog", "Lore Blog"],
         //["https://www.completionator.com/Community/Profile/14041", "Completionator"],
         //["https://www.exophase.com/user/CardinalFunky/", "Exophase"],
