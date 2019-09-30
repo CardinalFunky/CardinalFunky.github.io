@@ -412,6 +412,16 @@ const videoGames = [
         ["PC", "Twitch"],
         []
     ),
+    new VideoGame(
+        "Overwatch",
+        ["PC", "Blizzard"],
+        []
+    ),
+    new VideoGame(
+        "Diablo 3",
+        ["PC", "Blizzard"],
+        []
+    ),
 ]
 
 const collectionChart = function(games) {
