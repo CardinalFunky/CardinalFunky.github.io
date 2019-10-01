@@ -19,11 +19,6 @@ const videoGames = [
         genres: ["Action", "Fighting", "Multiplayer"]
     },
     {
-        name: "Super Smash Bros. Ultimate",
-        systems: ["Nintendo Switch"],
-        genres: ["Action", "Fighting", "Multiplayer"]
-    },
-    {
         name: "Pokemon: Let's Go, Pikachu!",
         systems: ["Nintendo Switch"],
         genres: ["Adventure", "RPG", "Multiplayer"]
