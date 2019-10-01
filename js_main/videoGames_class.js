@@ -1,6 +1,6 @@
-/*
+/* **************************************************************************************
     This file defines the video game collection that will be stored on the website.
-*/
+***************************************************************************************** */
 
 // Parameters: 
 //      [name] = The name of the video game, 
@@ -424,16 +424,17 @@ const videoGames = [
     ),
 ]
 
+// A chart that displays the amount of video games for each category of
+// different video game systems.
 const collectionChart = function(games) {
-    // Variables
+    // Video Game console variables
     var nintendoSwitch = 0;
     var pc = 0;
 
-    // Get data for chart
-    // Where the game is on the Nintendo Switch
+    // Get data for chart, for each video game system
     for(var i = 0; i < games.length; i++) {
         var gameSystems = games[i].systems;
-
+        
         for(var k = 0; k < gameSystems.length; k++) {
             if(gameSystems[k] == "Nintendo Switch") {
                 nintendoSwitch += 1;
@@ -443,7 +444,7 @@ const collectionChart = function(games) {
         }
     }
 
-    // Make Chart
+    // Make and append Chart
     var canvas = "<canvas id='collectionChart' width='400' height='200'></canvas>";
     $("#primary-collectionChart").append(canvas);
 
