@@ -1,427 +1,413 @@
 /* **************************************************************************************
-    This file defines the video game collection that will be stored on the website.
+    This file defines an array of video game objects for the website.
 ***************************************************************************************** */
 
-// Parameters: 
-//      [name] = The name of the video game, 
-//      [systems] = A list of video game systems where Cardinal Funky has the game.
-//      [genres] = A list of genres for the video game.
-class VideoGame {
-    constructor(name, systems, genres) {
-        this.name = name;
-        this.systems = systems;
-        this.genres = genres;
-    }
-
-    getName() {
-        return this.name;
-    }
-
-    getSystems() {
-        return this.systems;
-    }
-
-    getGenres() {
-        return this.genres;
-    }
-}
-
 const videoGames = [
-    new VideoGame(
-        "Monster Hunter Generation Ultimate",
-        ["Nintendo Switch"],
-        ["Action", "Role-Playing"]
-    ),
-    new VideoGame(
-        "Tetris 99",
-        ["Nintendo Switch"],
-        ["Multiplayer", "Puzzle"]
-    ),
-    new VideoGame(
-        "Super Smash Bros. Ultimate",
-        ["Nintendo Switch"],
-        ["Action", "Fighting", "Multiplayer"]
-    ),
-    new VideoGame(
-        "Pokemon: Let's Go, Pikachu!",
-        ["Nintendo Switch"],
-        ["Adventure", "RPG", "Multiplayer"]
-    ),
-    new VideoGame(
-        "Path of Exile",
-        ["PC", "Steam"],
-        ["Action", "Adventure", "Free to Play", "Indie", "Massively Multiplayer", "RPG"]
-    ),
-    new VideoGame(
-        "Attack on Titan / A.O.T. Wings of Freedom",
-        ["PC", "Steam"],
-        ["Action"]
-    ),
-    new VideoGame(
-        "Shadow Warrior 2",
-        ["PC", "Steam"],
-        ["Action", "Adventure"]
-    ),
-    new VideoGame(
-        "Undertale",
-        ["PC", "Steam"],
-        ["Indie", "RPG"]
-    ),
-    new VideoGame(
-        "Vikings - Wolves of Midgard",
-        ["PC", "Steam"],
-        ["Action", "RPG"]
-    ),
-    new VideoGame(
-        "No Man's Sky",
-        ["PC", "GOG Galaxy"],
-        ["Adventure", "Action", "Sandbox"]
-    ),
-    new VideoGame(
-        "Neverwinter Nights Diamond",
-        ["PC", "GOG Galaxy"],
-        ["RPG"]
-    ),
-    new VideoGame(
-        "Ultima™ 4: Quest of the Avatar",
-        ["PC", "GOG Galaxy"],
-        ["RPG", "Adventure", "Fantasy"]
-    ),
-    new VideoGame(
-        "Battlefield Bad Company 2",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Battlefield 3",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Battlefield 4",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Mass Effect: Andromeda",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Titanfall 2",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Bejeweled 3",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Command & Conquer Red Alert 2 and Yuri's Revenge",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Crusader: No Remorse",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Crysis 2 Maximum Edition",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dead Space",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dead Space 3",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dragon Age II",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dragon Age Inquisition",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dragon Age Origins",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dragon Age: Origins - Ultimate Edition",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Dungeon Keeper",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Jade Empire Special Edition",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Mass Effect",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Mass Effect 2",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Mass Effect 3",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Medal of Honor Pacific Assault",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Nox",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Peggle",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Plants vs. Zombies",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Populous",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Sim City 2000: The Ultimate City Simulator",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Syndicate (1993)",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "The Sims 3",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Theme Hospital",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Titanfall",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Ultima VIII Gold Edition",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Wing Commander III: Heart of the Tiger",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Zuma's Revenge",
-        ["PC", "Origin"],
-        []
-    ),
-    new VideoGame(
-        "Subnautica",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "ABZU",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Fortnite",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "City of Brass",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Everything",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Hyper Light Drifter",
-        ["PC", "Epic Games", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Last Day of June",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Metro: 2033 Redux",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Mutant Year Zero Road to Eden",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "PixArk",
-        ["PC", "Epic Games", "Steam"],
-        []
-    ),
-    new VideoGame(
-        "RiME",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Stories Untold",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "The End is Nigh",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "Transistor",
-        ["PC", "Epic Games"],
-        []
-    ),
-    new VideoGame(
-        "A Good Snowman Is Hard To Build",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Bomber Crew",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Broforce",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Cosmic Express",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Crossing Souls",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Dear, Esther",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Downwell",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Hotline Miami",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Hotline Miami 2: Wrong Number",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Orwell",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Orwell: Ignorance Is Strength",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Pikuniku",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Republique",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Sokobond",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Strafe",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "The Flame In The Flood",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "The Messenger",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "The Swords of Ditto",
-        ["PC", "Twitch"],
-        []
-    ),
-    new VideoGame(
-        "Overwatch",
-        ["PC", "Blizzard"],
-        []
-    ),
-    new VideoGame(
-        "Diablo 3",
-        ["PC", "Blizzard"],
-        []
-    ),
+    {
+        name: "Monster Hunter Generations Ultimate",
+        systems: ["Nintendo Switch"],
+        generes: ["Action", "Role-Playing"]
+    },
+    {
+        name: "Tetris 99",
+        systems: ["Nintendo Switch"],
+        genres: ["Multiplayer", "Puzzle"]
+    },
+    {
+        name: "Super Smash Bros. Ultimate",
+        systems: ["Nintendo Switch"],
+        genres: ["Action", "Fighting", "Multiplayer"]
+    },
+    {
+        name: "Super Smash Bros. Ultimate",
+        systems: ["Nintendo Switch"],
+        genres: ["Action", "Fighting", "Multiplayer"]
+    },
+    {
+        name: "Pokemon: Let's Go, Pikachu!",
+        systems: ["Nintendo Switch"],
+        genres: ["Adventure", "RPG", "Multiplayer"]
+    },
+    {
+        name: "Path of Exile",
+        systems: ["PC", "Steam"],
+        genres: ["Action", "Adventure", "Free to Play", "Indie", "Massively Multiplayer", "RPG"]
+    },
+    {
+        name: "Attack on Titan / A.O.T. Wings of Freedom",
+        systems: ["PC", "Steam"],
+        genres: ["Action"]
+    },
+    {
+        name: "Shadow Warrior 2",
+        systems: ["PC", "Steam"],
+        genres: ["Action", "Adventure"]
+    },
+    {
+        name: "Undertale",
+        systems: ["PC", "Steam"],
+        genres: ["Indie", "RPG"]
+    },
+    {
+        name: "Vikings - Wolves of Midgard",
+        systems: ["PC", "Steam"],
+        genres: ["Action", "RPG"]
+    },
+    {
+        name: "No Man's Sky",
+        systems: ["PC", "GOG Galaxy"],
+        genres: ["Adventure", "Action", "Sandbox"]
+    },
+    {
+        name: "Neverwinter Nights Diamond",
+        systems: ["PC", "GOG Galaxy"],
+        genres: ["RPG"]
+    },
+    {
+        names: "Ultima™ 4: Quest of the Avatar",
+        systems: ["PC", "GOG Galaxy"],
+        genres: ["RPG", "Adventure", "Fantasy"]
+    },
+    {
+        name: "Battlefield Bad Company 2",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Battlefield 3",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Battlefield 4",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Mass Effect: Andromeda",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Titanfall 2",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Bejeweled 3",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Command & Conquer Red Alert 2 and Yuri's Revenge",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Crusader: No Remorse",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Crysis 2 Maximum Edition",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dead Space",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dead Space 3",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dragon Age II",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dragon Age Inquisition",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dragon Age Origins",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dragon Age: Origins - Ultimate Edition",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Dungeon Keeper",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Jade Empire Special Edition",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Mass Effect",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Mass Effect 2",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Mass Effect 3",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Medal of Honor Pacific Assault",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Nox",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Peggle",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Plants vs. Zombies",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Populous",
+        genres: ["PC", "Origin"],
+        systems: []
+    },
+    {
+        name: "Sim City 2000: The Ultimate City Simulator",
+        genres: ["PC", "Origin"],
+        systems: []
+    },
+    {
+        name: "Syndicate (1993)",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "The Sims 3",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Theme Hospital",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Titanfall",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Ultima VIII Gold Edition",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Wing Commander III: Heart of the Tiger",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Zuma's Revenge",
+        systems: ["PC", "Origin"],
+        genres: []
+    },
+    {
+        name: "Subnautica",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "ABZU",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Fortnite",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "City of Brass",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Everything",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Hyper Light Drifter",
+        systems: ["PC", "Epic Games", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Last Day of June",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Metro: 2033 Redux",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Mutant Year Zero Road to Eden",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "PixArk",
+        systems: ["PC", "Epic Games", "Steam"],
+        genres: []
+    },
+    {
+        name: "RiME",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Stories Untold",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "The End is Nigh",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "Transistor",
+        systems: ["PC", "Epic Games"],
+        genres: []
+    },
+    {
+        name: "A Good Snowman Is Hard To Build",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Bomber Crew",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Broforce",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Cosmic Express",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Crossing Souls",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Dear, Esther",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Downwell",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Hotline Miami",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Hotline Miami 2: Wrong Number",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Orwell",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Orwell: Ignorance Is Strength",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Pikuniku",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Republique",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Sokobond",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Strafe",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "The Flame In The Flood",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "The Messenger",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "The Swords of Ditto",
+        systems: ["PC", "Twitch"],
+        genres: []
+    },
+    {
+        name: "Overwatch",
+        systems: ["PC", "Blizzard"],
+        genres: []
+    },
+    {
+        name: "Diablo III + Reaper of Souls",
+        systems: ["PC", "Blizzard"],
+        genres: []
+    },
+    {
+        name: "World of Warcraft",
+        systems: ["PC", "Blizzard"],
+        genres: []
+    }
 ]
 
 // A chart that displays the amount of video games for each category of
