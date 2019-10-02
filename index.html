@@ -29,5 +29,29 @@
         <script src="js_main/functions.js"></script>
         <script src="js_main/videoGames_class.js"></script>
         <script src="js_main/main.js"></script>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyCf_C5ElwhII0IyJGJgggnhL5thfXdB5K0",
+            authDomain: "cardinalfunky-64840.firebaseapp.com",
+            databaseURL: "https://cardinalfunky-64840.firebaseio.com",
+            projectId: "cardinalfunky-64840",
+            storageBucket: "",
+            messagingSenderId: "1023001882671",
+            appId: "1:1023001882671:web:30164db2e4590454a256da",
+            measurementId: "G-LJE99E4JSY"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
     </body>
 </html>
