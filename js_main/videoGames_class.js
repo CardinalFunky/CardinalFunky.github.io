@@ -1,7 +1,7 @@
 /* **************************************************************************************
     This file defines an array of video game objects for the website.
 ***************************************************************************************** */
-
+ 
 const videoGames = [
     {
         name: "Monster Hunter Generations Ultimate",
@@ -399,7 +399,7 @@ const videoGames = [
         genres: []
     },
     {
-        name: "World of Warcraft",
+        name: "World of Warcraft: Battle for Azeroth",
         systems: ["PC", "Blizzard"],
         genres: []
     }
