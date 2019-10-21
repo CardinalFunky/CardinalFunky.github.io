@@ -24,6 +24,7 @@ function NavBar(Object) {
         //["https://www.exophase.com/user/CardinalFunky/", "Exophase"],
         ["https://github.com/CardinalFunky", "Github"],
         ["https://www.goodreads.com/user/show/67506229-cardinalfunky", "GoodReads"],
+        ["https://anilist.co/home", "Anilist"],
         ["https://myanimelist.net/profile/Cardinal_Funky", "MyAnimeList"],
         ["https://trakt.tv/users/cardinal-funky", "Trakt.tv"],
         ["https://deckbox.org/users/cardinalfunky", "DeckBox.org"]
