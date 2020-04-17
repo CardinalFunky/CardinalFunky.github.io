@@ -1,53 +1,24 @@
 /* **************************************************************************************
     This file defines objects of video games for the website.
-***************************************************************************************** */
- 
-const games = [
-    {
-        id: 1,
-        name: "Monster Hunter Generations Ultimate",
-    },
-    {
-        id: 2,
-        name: "Tetris 99",
-    },
-    {
-        id: 3,
-        name: "Super Smash Bros. Ultimate",
-    },
-    {
-        id: 4,
-        name: "Pokemon: Let's Go, Pikachu!",
-    },
-    {
-        id: 5,
-        name: "Path of Exile",
-    },
-    {
-        id: 6,
-        name: "Attack on Titan / A.O.T. Wings of Freedom",
-    }
-]
+    http://api.steampowered.com/<interface name>/<method name>/v<version>/?key=63B898D6B2D02752674CEF0A592A82A5&format=<format>
 
-const systems = [
-    {
-        id: 1,
-        name: "Nintendo Switch",
-        gamesID: [1, 2, 3, 4]
-    },
-    {
-        id: 2,
-        name: "PC",
-        gamesID: [5, 6]
-    },
-]
+    Get all player Achievements
+    https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=440&key=63B898D6B2D02752674CEF0A592A82A5&steamid=76561198004122242
+    Get Owned Games
+    http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=63B898D6B2D02752674CEF0A592A82A5&steamid=76561198004122242&format=json
+    Get Schema For Game
+    http://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=63B898D6B2D02752674CEF0A592A82A5&appid=4000
+***************************************************************************************** */
+
+var collectionChartData = $.getJSON('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=63B898D6B2D02752674CEF0A592A82A5&steamid=76561198004122242&format=json', function(data) {
+    return data;
+});
 
 // A chart that displays the amount of video games for each category of
 // different video game systems.
-const collectionChart = function(systems) {
+const collectionChart = function(data) {
     // Get data for chart, for each video game system
-    var nintendoSwitch = systems.find(x => x.id === 1).gamesID.length;
-    var pc = systems.find(x => x.id === 2).gamesID.length;
+    var pc = data.response.game_count;
 
     // Make and append Chart
     var canvas = "<canvas id='collectionChart' width='400' height='200'></canvas>";
@@ -58,16 +29,14 @@ const collectionChart = function(systems) {
     var chart = new Chart(ctx,  {
         type: 'bar',
         data: {
-            labels: ['Nintendo Switch', 'PC'],
+            labels: ['PC'],
             datasets: [{
-                data: [nintendoSwitch, pc],
+                data: [pc],
                 backgroundColor: [
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)'
+                    'rgba(54, 162, 235, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)'
+                    'rgba(54, 162, 235, 1)'
                 ],
                 borderWidth: 1
             }]
