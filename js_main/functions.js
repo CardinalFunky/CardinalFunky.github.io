@@ -20,10 +20,11 @@ function NavBar(Object) {
     var navList = [
         ["https://cardinaljourney.home.blog/", "Personal Blog"],
         ["http://lorekeeper.home.blog", "Lore Blog"],
-        //["https://www.completionator.com/Community/Profile/14041", "Completionator"],
+        ["https://www.completionator.com/Community/Profile/14041", "Completionator"],
         //["https://www.exophase.com/user/CardinalFunky/", "Exophase"],
         ["https://github.com/CardinalFunky", "Github"],
         ["https://www.goodreads.com/user/show/67506229-cardinalfunky", "GoodReads"],
+        ["https://anilist.co/home", "Anilist"],
         ["https://myanimelist.net/profile/Cardinal_Funky", "MyAnimeList"],
         ["https://trakt.tv/users/cardinal-funky", "Trakt.tv"],
         ["https://deckbox.org/users/cardinalfunky", "DeckBox.org"]
