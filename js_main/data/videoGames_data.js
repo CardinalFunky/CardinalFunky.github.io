@@ -9,6 +9,7 @@
  * "owned" => A boolean that tells me if I own the video game
  * "wishlist" => A boolean that tells me if this game is on my wishlist
  * "completed" => A boolean that tells me if I have completed this video game
+ * "amount_paid" => The amount of money I paid for the game
  */
 
 const videoGames = [
@@ -18,7 +19,7 @@ const videoGames = [
         "picture": "https://steamcdn-a.akamaihd.net/steam/apps/449800/header.jpg?t=1550182918",
         "owned": true,
         "wishlist": false,
-        "completed": true
-    },
-
+        "completed": true,
+        "amount_paid": 32.28
+    }
 ];
