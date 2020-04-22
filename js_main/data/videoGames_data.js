@@ -14,12 +14,21 @@
 
 const videoGames = [
     {
-        "id": "1",
+        "id": 1,
         "name": "Attack on Titan / A.O.T. Wings of Freedom",
         "picture": "https://steamcdn-a.akamaihd.net/steam/apps/449800/header.jpg?t=1550182918",
         "owned": true,
         "wishlist": false,
         "completed": true,
         "amount_paid": 32.28
+    },
+    {
+        "id": 2,
+        "name": "Open World Game: the Open World Game",
+        "picture": "https://steamcdn-a.akamaihd.net/steam/apps/1144110/header.jpg?t=1575677298",
+        "owned": true,
+        "wishlist": false,
+        "completed": true,
+        "amount_paid": 0
     }
 ];
