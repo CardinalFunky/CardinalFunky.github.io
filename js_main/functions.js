@@ -18,6 +18,7 @@ function NavBar(Object) {
     $(Object).append(navbar);
 
     var navList = [
+        ["https://medium.com/@cardinalfunky", "Medium"],
         ["https://cardinaljourney.home.blog/", "Personal Blog"],
         ["http://lorekeeper.home.blog", "Lore Blog"],
         ["https://www.completionator.com/Community/Profile/14041", "Completionator"],
