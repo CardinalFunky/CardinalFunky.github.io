@@ -1,3 +1,3 @@
 Header('#primary-jumbo');
 NavBar('#primary-navbar');
-collectionChart(collectionChartData);
+sites('#primary-content');

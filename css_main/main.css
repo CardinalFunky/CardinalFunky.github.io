@@ -1,3 +1,12 @@
 body {
     background-color: black;
 }
+
+#primary-jumbo {
+    margin-bottom: 0px;
+}
+
+#primary-content {
+    background-color: white;
+    padding: 1%;
+}
