@@ -28,16 +28,16 @@ function NavBar(Object) {
 
     let navList = [
         ["https://medium.com/@cardinalfunky", "Medium"],
-        ["https://cardinaljourney.home.blog/", "Personal Blog"],
-        ["http://lorekeeper.home.blog", "Lore Blog"],
+        //["https://cardinaljourney.home.blog/", "Personal Blog"],
+        //["http://lorekeeper.home.blog", "Lore Blog"],
         ["https://www.completionator.com/Community/Profile/14041", "Completionator"],
         //["https://www.exophase.com/user/CardinalFunky/", "Exophase"],
         ["https://github.com/CardinalFunky", "Github"],
         ["https://www.goodreads.com/user/show/67506229-cardinalfunky", "GoodReads"],
-        ["https://anilist.co/home", "Anilist"],
+        //["https://anilist.co/home", "Anilist"],
         ["https://myanimelist.net/profile/Cardinal_Funky", "MyAnimeList"],
         ["https://trakt.tv/users/cardinal-funky", "Trakt.tv"],
-        ["https://deckbox.org/users/cardinalfunky", "DeckBox.org"]
+        //["https://deckbox.org/users/cardinalfunky", "DeckBox.org"]
     ];
 
     for (let i = 0; i < navList.length; i++) {
@@ -68,8 +68,8 @@ function sites(object) {
      *      3) The site link.
      */
     let sites = [
-        ["Training Hero: Always Focuses on Training", 'https://lh3.googleusercontent.com/uGr38-fciGjKpzMU8nIy765kNAG0uphaakufuo75TCUaI0t31SyXStGRkoZgIwVFr6aV', "#"],
-        ["Exos Heroes", "https://mmoculture.com/wp-content/uploads/2019/09/Exos-Heroes-image.jpg", "#"]
+        //["Training Hero: Always Focuses on Training", 'https://lh3.googleusercontent.com/uGr38-fciGjKpzMU8nIy765kNAG0uphaakufuo75TCUaI0t31SyXStGRkoZgIwVFr6aV', "#"],
+        //["Exos Heroes", "https://mmoculture.com/wp-content/uploads/2019/09/Exos-Heroes-image.jpg", "#"]
     ];
 
     for (let i = 0; i < sites.length; i++) {
@@ -77,9 +77,9 @@ function sites(object) {
             <div class="card" style="width: 18rem; display: inline-block; margin-right: 1%;">
                 <img src="` + sites[i][1] + `" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title text-center">` + sites[i][0] + `</h5>
-                <p class="card-text"></p>
-                <a href="` + sites[i][2] + `" class="btn btn-primary btn-lg btn-block">Website</a>
+                    <h5 class="card-title text-center">` + sites[i][0] + `</h5>
+                    <p class="card-text"></p>
+                    <a href="` + sites[i][2] + `" class="btn btn-primary btn-lg btn-block">Website</a>
                 </div>
             </div>
         `;
