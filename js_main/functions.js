@@ -69,7 +69,8 @@ function sites(object) {
      */
     let sites = [
         //["Training Hero: Always Focuses on Training", 'https://lh3.googleusercontent.com/uGr38-fciGjKpzMU8nIy765kNAG0uphaakufuo75TCUaI0t31SyXStGRkoZgIwVFr6aV', "#"],
-        //["Exos Heroes", "https://mmoculture.com/wp-content/uploads/2019/09/Exos-Heroes-image.jpg", "#"]
+        //["Exos Heroes", "https://mmoculture.com/wp-content/uploads/2019/09/Exos-Heroes-image.jpg", "#"],
+        //["Cyberpunk 2077", "https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg?t=1608552868", "#"]
     ];
 
     for (let i = 0; i < sites.length; i++) {
