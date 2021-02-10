@@ -2,11 +2,20 @@ body {
     background-color: black;
 }
 
+#primary-body {
+    padding: 0;
+}
+
 #primary-jumbo {
     margin-bottom: 0px;
 }
 
 #primary-content {
+    background-color: white;
+    padding: 1%;
+}
+
+.primary-information {
     background-color: white;
     padding: 1%;
 }

@@ -6,9 +6,10 @@
  * @param {*} Object The HTML element
  */
 function Header(object) {
-    let head = 
-        '<img src="./images/profile/funky.jpg" class="img-fluid rounded mx-auto d-block">' +
-        '<h1 class="display-4"><center>Cardinal Funky</center></h1>';
+    let head = `
+        <img src="./images/profile/funky.jpg" class="img-fluid rounded mx-auto d-block">
+        <h1 class="display-4"><center>Cardinal Funky</center></h1>
+    `;
         
     $(object).append(head);
 }
@@ -20,7 +21,7 @@ function Header(object) {
  */
 function NavBar(Object) {
     let navbar = 
-        '<div class="navbar-nav mr-auto" id="navbarNav">' +
+        '<div class="navbar-nav mr-auto collapse navbar-collapse" id="navbarNav">' +
             '<ul class="navbar-nav" id="primary-navbar-nav">' +
             '</ul>' +
         '</div>';
